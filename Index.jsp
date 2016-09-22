@@ -9,10 +9,10 @@
     <script>
       function getValuesFromForm()
       {
-        var emailId = document.getElementById("email").value;
-        var firstName = document.getElementById("firstname").value;
-        var lastName = document.getElementById("lastname").value;
-        var country = document.getElementById("country")
+        var emailId = document.getElementById('email').value;
+        var firstName = document.getElementById('firstname');
+        var lastName = document.getElementById('lastname');
+        var country = document.getElementById('country');
         var countryName = country.options[country.selectedIndex].text;
         
         alert("The values you have submitted are as follows!")
@@ -50,8 +50,8 @@
       
       <div class="row">
         <div class="col-md-6">
-          <input type="text" name="firstname" placeholder="First name"><br><br>
-          <input type="text" name="lastname" placeholder="Last name"><br><br>
+          <input type="text" name="firstname" placeholder="First name" value=""><br><br>
+          <input type="text" name="lastname" placeholder="Last name" value=""><br><br>
         </div>
         
         <div class="col-md-6">

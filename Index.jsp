@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      function getValuesFromForm()
+      {
+        var emailId = document.getElementById("email")
+        var firstName = document.getElementById("firstname")
+        var lastName = document.getElementById("lastname")
+        var country = document.getElementById("country")
+        var countryName = country.options[country.selectedIndex].text;
+        
+        alert("The values you have submitted are as follows!")
+        alert(firstName)
+        alert(lastName)
+        alert(emailId)
+        alert(countryName)
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -45,7 +61,7 @@
                 <option>England</option>
               </select>
             </div>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="getValuesFromForm()">
         </div>
         
       </div>

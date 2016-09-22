@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-md-9">
           <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src=""></iframe>
+            <iframe class="embed-responsive-item" src="/videoplayback.mp4"></iframe>
           </div>
         </div>
       </div>

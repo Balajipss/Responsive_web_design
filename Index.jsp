@@ -9,9 +9,9 @@
     <script>
       function getValuesFromForm()
       {
-        var emailId = document.getElementById("email")
-        var firstName = document.getElementById("firstname")
-        var lastName = document.getElementById("lastname")
+        var emailId = document.getElementById("email").value;
+        var firstName = document.getElementById("firstname").value;
+        var lastName = document.getElementById("lastname").value;
         var country = document.getElementById("country")
         var countryName = country.options[country.selectedIndex].text;
         
@@ -41,15 +41,17 @@
       </div>
       
       <div class="row">
-        <h3> Please enter your personal details below:</h3>
+        <div class="col-md-10">
+          <h3> Please enter your personal details below:</h3>
           <label for="email">Email-ID</label>
-          <input class="form-control" id="email" type="text">
+          <input class="form-control" id="email" type="text"><br>
+        </div>
       </div>
       
       <div class="row">
         <div class="col-md-6">
-          <input type="text" name="firstname" placeholder="First name"><br>
-          <input type="text" name="lastname" placeholder="Last name"><br>
+          <input type="text" name="firstname" placeholder="First name"><br><br>
+          <input type="text" name="lastname" placeholder="Last name"><br><br>
         </div>
         
         <div class="col-md-6">
